@@ -2,13 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>ABC News</title>
-    <script src="https://cdn.plrjs.com/player/4h9b6shizzd4b/291c235jkv5l.js" type="text/javascript"></script>
+    <title>ABC</title>
+    <style media="screen">
+    #my-div
+{
+  width    : 85%;
+  height   : 100%;
+  overflow : hidden;
+  position : absolute;
+}
+    </style>
   </head>
-  <body style="padding: 0px;">
-    <div id="player"</div>
-    <script>
-       var player = new Playerjs({id:"player", file:"http://qqtv.nl:8080/live/john123/john123/7902.m3u8"});
-    </script>
+  <body>
+    <div id="my-div">
+      <iframe scrolling="no" src="https://freefeds.com/video/52715/ABC-TV:US-TV-Channels.html" style="border: 0px none; height: 125%; margin-top: -75px;  margin-left: 0px; width: 150%;" allowfullscreen>
+      </iframe>
+    </div>
   </body>
 </html>
